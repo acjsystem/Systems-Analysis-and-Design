@@ -1,0 +1,155 @@
+/*---------- P A R T I A L S ----------*/
+@import '../utilities/vars';
+
+
+/*---------- M E D I A  Q U E R I E S ----------*/
+
+/* Mobile Viewing is not available, .visible-xs-* */
+/* Small Devices, .visible-sm-* */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+} 
+/* Medium */
+@media(min-width:992px) and (max-width:1199px){
+    
+}
+/* Large Devices, .visible-lg-* 1360px*/
+@media (min-width: 1200px) and (max-width: 1400){
+
+    
+}
+
+/* Large Devices, .visible-lg-* 1920px*/
+@media (min-width: 1401px){
+
+    
+}
+
+/*---------- M A I N  S T Y L E S -----------*/
+body, html{                                              // Login Page, Benefits System Home
+    margin: 0;                                           // Fits exact whole page
+    height: 100%;
+}
+body{
+    @include overflow(hidden);
+}
+.wrapper_one{                                            // Wrapper of the whole exact one page               
+    height: 100%;
+    position: relative;
+    
+    .wrapper_left{                                       // Start of Index Page 
+        background-size: cover;
+        background-image: url('../res/images/login-bg-max.png');
+        background-repeat: no-repeat;
+        
+        #titles_login1{
+            @include font-size(3.0vw);
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            bottom: 30vh;
+            right: 3%;
+        }
+        #titles_login2{
+            @include font-size(2.4vw);
+            color: white;
+            opacity: 0.5;
+            position: absolute;
+            bottom: 25vh;
+            right: 3%;
+        }
+    }
+    .wrapper_right{
+        background-size: cover;
+        background-image: url('../res/images/bg_white_max.png');
+        background-repeat: no-repeat;
+        
+        #login_form{
+            position: absolute;
+            bottom: 25vh;
+            left: 6vw;
+        }
+        #titles_login3{
+            @include font-size(2vw);
+            color: $primary_color;
+            font-weight: bold;
+        }
+        #titles_login4{
+            @include font-size(1vw);
+            color: #bbbbbb;
+            margin-bottom: 10vh;
+        }
+        #fields_login{
+            border-color: $temp_color;
+        }
+        .form-control{
+            width: 26vw;
+            border-radius: 100px;
+            margin-bottom: 3vh;
+            @include font-size(.8vw);
+            padding: 1em;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+            outline: none;
+            border: none;
+        }
+        .form-control:focus{
+            border-style: solid;
+            border-color: #cccccc;
+            border-width: thin;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+        #btn_submit{
+            margin-top: 6vh;
+        }
+    }
+    .wrapper_right, .wrapper_left{
+        @include overflow(auto);
+        height: 100%;
+    }
+}
+
+
+/*          G E N E R A L           */
+.nopadding{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.btn-primary{
+    background: $primary_color;
+    border-style: none;
+    border-radius: 40px;
+    text-align: center;
+    letter-spacing: 0.10em;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    @include font-size(.8vw);
+    padding: 1em;
+}
+ .btn-primary:hover {
+      background-color: $primary_color;
+      box-shadow: 0px 10px 15px rgba(57, 107, 156, 0.5);
+      color: #fff;
+      transform: translateY(-3px);
+}
+.btn-primary-perm{
+    margin-top: 4vh;
+}
+.btn-unclicked{
+    color: $f_emphasis_color;
+}
+.btn-unclicked-perm{
+    margin-top: 4vh;
+}
+.btn-secondary{
+    border-radius: 40px;
+    text-align: center;
+    border-color: $secondary_color;
+}
+.btn-secondary-perm{
+    margin-top: 25vh;
+    width: 10vw;
+    color: $secondary_color;
+    
+}
