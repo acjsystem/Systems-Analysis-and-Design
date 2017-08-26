@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Benefits System - Home</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles_onepage_bnfts.css">
+
+</head>
+
+<body id="bnft_body">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Warning for mobile users -->
+    <center>
+        <p class="visible-xs">Management Systems are not available on Mobile</p>
+    </center>
+    <center>
+        <p class="visible-xs">Kindly use atleast a Tablet. It is recommended to use Web Page. Thank you</p>
+    </center>
+
+    <!-- Main Content -->
+    <div class="rows wrapper_home hidden-xs nopadding">
+        <div class="col-md-2 col-sm-2 wrapper_sidebar nopadding">
+            <div class="rows wrapper_top nopadding">
+                <div class="col-md-12 col-sm-12 sidebar_info nopadding">
+                    <img src="res/images/people/camz1.jpg" class="img-circle img_profile center-block"><br />
+                    <p class="sidebar_text" id="u_name">HR Manager Name</p>
+                    <p class="sidebar_text" id="u_jobtitle">HR Manager</p>
+                </div>
+            </div>
+            <div class="rows wrapper_bottom nopadding">
+                <div class="col-md-12 col-sm-12 sidebar_perms">
+                    <div class="perms">
+                        <ul>
+                        <li class="permsone"><a href="" class="btn-primary">Benefits Management</a></li>
+                        <li class="permsone"><a href="">Purchase Requisitions</a></li>
+                        <li class="permsone"><a href="">Supplies Requisitions</a></li>
+                        <li class="permsone logout"><a class="btn-tertiary" href="" id="logout">Logout</a></li>
+                                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="rows wrapper_footer nopadding">
+                <div class="col-md-6 col-sm-6 sidebar_logo nopadding">
+                    <img src="res/images/beep_logo.jpg" id="logo" class="center-block">
+                </div>
+                <div class="col-md-6 col-sm-6 sidebar_company nopadding">
+                    <p id="company">AFPI Management</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10 col-sm-10 layer_1 nopadding">
+            <div class="col-md-8 col-sm-8 title">
+                <h3>BENEFIT MANAGEMENT SYSTEM</h3>
+            </div>
+            <div class="col-md-1 col-sm-1 tab_1">
+               <a href="#">Benefits</a>                
+            </div> 
+            <div class="col-md-1 col-sm-1 tab_2">
+               <a href="#">Employees</a>                
+            </div>             
+        </div>
+        <div class="col-md-10 col-sm-10 layer_2">
+            <div class="menu"> 
+                <div class="col-md-9 col-sm-10 menu_1">
+                     <a href="#" class="btn-primary">
+                        VIEW ALL
+                     </a>
+                     <a data-toggle="modal" data-target="#mymodal" class="btn-primary">
+                        ADD BENEFIT
+                     </a>
+                     <a href="#" class="btn-primary">
+                        GENERATE REPORT
+                     </a>
+                 </div> 
+                 <div class="col-md-3 col-sm-2 search">    
+                    <input type="text" name="search" placeholder="  &#xf002;  SEARCH">
+                 </div>
+            </div>
+        </div>
+        <div class="col-md-10 col-sm-10 content_for_home">
+           <div class="row section_1">
+               <div class="col-md-4 benefit">
+                    <div class="benefit_1">
+                       <div class="for_icon">
+                       </div>
+                       <div class="for_name">
+                           <h4>WELLNESS</h4>
+                       </div>
+                        <div class="for_desc">
+                           <p>Lorem Ipsum Dolor Este</p>
+                       </div>
+                       <div class="for_button">
+                         <a href="#" class="btn-primary">
+                            EDIT
+                         </a>
+                       </div>
+                    </div>   
+               </div> 
+               <div class="col-md-4 benefit">
+                    <div class="benefit_1">
+                       <div class="for_icon">
+                       </div>
+                       <div class="for_name">
+                           <h4>WELLNESS</h4>
+                       </div>
+                        <div class="for_desc">
+                           <p>Lorem Ipsum Dolor Este</p>
+                       </div>
+                       <div class="for_button">
+                         <a href="#" class="btn-primary">
+                            EDIT
+                         </a>
+                       </div>
+                    </div>   
+               </div>
+               <div class="col-md-4 benefit">
+                    <div class="benefit_1">
+                       <div class="for_icon">
+                       </div>
+                       <div class="for_name">
+                           <h4>WELLNESS</h4>
+                       </div>
+                        <div class="for_desc">
+                           <p>Lorem Ipsum Dolor Este</p>
+                       </div>
+                       <div class="for_button">
+                         <a href="#" class="btn-primary">
+                            EDIT
+                         </a>
+                       </div>
+                    </div>   
+               </div>                                                                                                                         
+           </div>       
+        </div>
+        
+        <div class="add_emp_modal modal" id="mymodal">
+           <div class="content">
+              <p>ADD BENEFIT</p>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+           </div>
+           <div class= "content_sec02">
+             <form>
+                 <input type="text" name="search" placeholder="BENEFIT NAME"> 
+                 <textarea class="textarea_1" rows="8" cols="40" placeholder="BENEFIT DESCRIPTION"></textarea>
+                 <textarea class="textarea_2" rows="8" cols="40" placeholder="BENEFIT REQUIREMENTS"></textarea>
+                 <input class="btn-modal-2 button_1" type="button" value="Upload Icon">
+                 <input class="btn-modal-1 button_1" type="button" value="Add Benefit">
+               
+             </form>     
+           </div>
+           
+            
+        </div>   
+        
+    </div>
+
+
+</body>
+
+</html>
